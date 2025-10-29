@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* Custom tokens for Tailwind v4 - Auto-generated from Figma Tokens Studio */
+@theme {
+/* Color tokens */
+  --color-brand-primary: #0C1F17;
+  --color-brand-accent: #D4AF37;
+  --color-bg-canvas: #FFFFFF;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-muted: #FFFFFF;
+  --color-text-primary: #000000;
+  --color-text-secondary: #000000;
+  --color-text-muted: #000000;
+  --color-text-inverse: #FFFFFF;
+  --color-text-onAccent: #0C1F17;
+  --color-border-default: #000000;
+  --color-border-strong: #000000;
+  --color-border-focus: #000000;
+  --color-state-success-bg: #000000;
+  --color-state-success-text: #000000;
+  --color-state-success-border: #000000;
+  --color-state-warning-bg: #000000;
+  --color-state-warning-text: #000000;
+  --color-state-warning-border: #000000;
+  --color-state-error-bg: #000000;
+  --color-state-error-text: #000000;
+  --color-state-error-border: #000000;
+/* Spacing tokens */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-128: 128px;
+/* Typography tokens */
+  --display-lg-font-family: Public Sans;
+  --display-lg-font-size: 48px;
+  --display-lg-font-weight: 700;
+  --display-lg-line-height: 120%;
+  --display-lg-letter-spacing: 0px;
+  --display-md-font-family: Public Sans;
+  --display-md-font-size: 40px;
+  --display-md-font-weight: 700;
+  --display-md-line-height: 120%;
+  --display-md-letter-spacing: 0px;
+  --heading-lg-font-family: Public Sans;
+  --heading-lg-font-size: 32px;
+  --heading-lg-font-weight: 600;
+  --heading-lg-line-height: 130%;
+  --heading-lg-letter-spacing: 0px;
+  --heading-md-font-family: Public Sans;
+  --heading-md-font-size: 24px;
+  --heading-md-font-weight: 600;
+  --heading-md-line-height: 130%;
+  --heading-md-letter-spacing: 0px;
+  --body-lg-font-family: Public Sans;
+  --body-lg-font-size: 18px;
+  --body-lg-font-weight: 400;
+  --body-lg-line-height: 150%;
+  --body-lg-letter-spacing: 0px;
+  --body-md-font-family: Public Sans;
+  --body-md-font-size: 16px;
+  --body-md-font-weight: 400;
+  --body-md-line-height: 150%;
+  --body-md-letter-spacing: 0px;
+  --caption-font-family: Public Sans;
+  --caption-font-size: 12px;
+  --caption-font-weight: 400;
+  --caption-line-height: 150%;
+  --caption-letter-spacing: 0px;
+  --button-font-family: Public Sans;
+  --button-font-size: 14px;
+  --button-font-weight: 600;
+  --button-line-height: 120%;
+  --button-letter-spacing: 0.3px;
+}
+
+/* (Optional) shared utilities */
+@layer utilities {
+  .rounded-button { border-radius: var(--radius-button, 0.375rem); }
+  .rounded-card   { border-radius: var(--radius-card, 0.5rem); }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@rfs/tokens",
+  "version": "0.0.0",
+  "private": true,
+  "files": ["dist"],
+  "scripts": {
+    "build": "node convert-tokens.js",
+    "watch": "node watch-tokens.js",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "@tokens-studio/token-transformer": "^0.15.0",
+    "rimraf": "^6.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+name: Tokens Sync
+on:
+  push:
+    paths:
+      - rfs-tokens.json
+jobs:
+  move-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Ensure package structure
+        run: mkdir -p packages/tokens/src
+      - name: Move tokens to package
+        run: mv rfs-tokens.json packages/tokens/src/tokens.json
+      - name: Install deps
+        run: npm ci
+      - name: Build tokens (Style Dictionary)
+        run: npm run -w packages/tokens build
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore(tokens): sweep rfs-tokens → package & build"
+          git push
